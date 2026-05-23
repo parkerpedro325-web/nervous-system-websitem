@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nervous System Website</title>
+  <meta name="description" content="Educational project about the nervous system, diseases, and a robotic solution. Created for IAR 2026." />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <style>
+    :root{--accent:#38bdf8;--muted:#93c5fd}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;scroll-behavior:smooth}
+    a{color:var(--accent)}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:8px;top:8px;width:auto;height:auto;padding:8px;background:#000;border-radius:4px}
+    nav{background:rgba(0,0,0,0.7);padding:12px;position:sticky;top:0;z-index:1000;display:flex;align-items:center;justify-content:center;gap:12px}
+    .nav-toggle{display:none;background:none;border:2px solid rgba(255,255,255,0.12);color:white;padding:8px 10px;border-radius:8px;font-size:16px}
+    .nav-links{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center}
+    nav a{color:#fff;text-decoration:none;margin:6px;font-weight:700;transition:color .2s}
+    nav a:hover{color:var(--accent)}
+    section{padding:60px 40px;min-height:100vh}
+    h1,h2{text-align:center}
+    h1{font-size:44px;color:var(--accent);margin:0 0 12px}
+    h2{color:var(--muted);margin-bottom:12px}
+    p{font-size:18px;line-height:1.8;text-align:justify}
+    .card{background:rgba(255,255,255,0.06);padding:22px;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,0.45)}
+    .gallery{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:16px}
+    .gallery img{width:300px;height:200px;object-fit:cover;border-radius:12px;border:3px solid rgba(255,255,255,0.12)}
+    iframe{display:block;margin:16px auto;border-radius:12px;width:80%;max-width:900px;height:400px}
+    footer{text-align:center;padding:20px;background:rgba(0,0,0,0.8)}
+    @media (max-width:700px){
+      .nav-toggle{display:inline-block}
+      .nav-links{display:none}
+      nav.open .nav-links{display:flex;flex-direction:column;background:rgba(0,0,0,0.6);position:absolute;left:8px;right:8px;top:56px;padding:12px;border-radius:8px}
+      .gallery img{width:100%;height:auto;max-width:320px}
+      h1{font-size:32px}
+      section{padding:36px 16px}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav role="navigation" aria-label="Main navigation">
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <div id="nav-links" class="nav-links" role="menubar">
+      <a role="menuitem" href="#home">Home</a>
+      <a role="menuitem" href="#research">Research Data</a>
+      <a role="menuitem" href="#problems">Problems</a>
+      <a role="menuitem" href="#robotic">Robotic Solution</a>
+      <a role="menuitem" href="#programming">Programming</a>
+      <a role="menuitem" href="#journey">Journey</a>
+      <a role="menuitem" href="#conclusion">Conclusion</a>
+      <a role="menuitem" href="#team">Team</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section id="home">
+      <div class="card">
+        <h1>The Nervous System</h1>
+        <p>Welcome to our website about the Nervous System. The nervous system is one of the most important systems in the human body because it controls movement, emotions, memory, thoughts, and reactions. It is composed of the brain, spinal cord, and nerves that send electrical messages throughout the body. Thanks to this system, humans can communicate, feel pain, react to danger, and process information every second.</p>
+        <p>In this project, we explain how the nervous system works, the main diseases that can affect it, and how robotics and technology may improve treatments in the future. We also created a robotic solution inspired by nanotechnology that could help repair damaged nerve cells.</p>
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?q=80&w=1200&auto=format&fit=crop" alt="Neurons illustration" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1532187643603-ba119ca4109e?q=80&w=1200&auto=format&fit=crop" alt="Brain research" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="card">
+        <h2>Research Data</h2>
+        <p>The nervous system is divided into two major parts: the central nervous system and the peripheral nervous system. The central nervous system includes the brain and spinal cord, while the peripheral nervous system connects the rest of the body to the brain.</p>
+        <p>Neurons are specialized cells that transmit electrical signals through the body. The brain controls important functions such as breathing, heartbeat, emotions, and learning. Maintaining healthy habits is important because the nervous system is very delicate and can be damaged easily.</p>
+        <p>Extra Information:<br><a href="https://www.ninds.nih.gov" target="_blank" rel="noopener">National Institute of Neurological Disorders and Stroke</a></p>
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?q=80&w=1200&auto=format&fit=crop" alt="Microscope" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1511174511562-5f7f18b874f8?q=80&w=1200&auto=format&fit=crop" alt="Laboratory" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="problems">
+      <div class="card">
+        <h2>Problems</h2>
+        <p>Many diseases can affect the nervous system. Some common disorders include Alzheimer's disease, Parkinson's disease, epilepsy, and multiple sclerosis. These conditions can damage the brain, nerves, or spinal cord and affect memory, movement, and communication.</p>
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?q=80&w=1200&auto=format&fit=crop" alt="Health" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200&auto=format&fit=crop" alt="Doctor" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="robotic">
+      <div class="card">
+        <h2>Robotic Solution</h2>
+        <p>Our robotic solution is a nano robot designed to travel through the nervous system and repair damaged neurons. It could detect injured nerve cells and help regenerate nerve connections using advanced technology.</p>
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop" alt="Nanotech" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=1200&auto=format&fit=crop" alt="Robotics" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="programming">
+      <div class="card">
+        <h2>Programming</h2>
+        <p>To create this website, we used HTML and CSS to organize information about the nervous system. We also used AI tools to generate ideas and improve the design of our webpage.</p>
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Coding" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&auto=format&fit=crop" alt="Interface" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="journey">
+      <div class="card">
+        <h2>Journey</h2>
+        <p>During this project, our team researched information about the nervous system and learned how important it is for the human body. We worked together to organize information, create designs, and develop our robotic solution.</p>
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Teamwork" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Presentation" loading="lazy">
+        </div>
+        <iframe src="https://www.youtube.com/embed/FuIK2yuLj0s" title="Robot Video" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="conclusion">
+      <div class="card">
+        <h2>Conclusion</h2>
+        <p>This project helped us understand how the nervous system works and why it is important for human health. We also learned how robotics and technology can improve medicine in the future.</p>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="card">
+        <h2>Team</h2>
+        <p><b>School:</b> CIDEB - UANL<br><b>Subject:</b> IAR 2026<br><b>Project:</b> Nervous System Website<br><b>Group:</b> 205<br><b>Team:</b> 5</p>
+        <p><b>Members and IDs:</b><br>- Cardenas Valentina — 2279435<br>- De Ochoa Galicia Victoria Monserrat — 2278769<br>- Gonzalez Gonzalez Aldo Salvador — 2279158<br>- Larche Lizarraga Emma — 2279179<br>- Morales Jung Iru David — 2279260<br>- Sánchez Zurita Iker Moroni — 2279235</p>
+        <p><b>Date:</b> May 2026</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>Created for IAR 2026 - Nervous System Website Project</p></footer>
+
+  <script>
+    // simple nav toggle
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('nav');
+    const links = document.querySelector('#nav-links');
+    if(btn){
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>
